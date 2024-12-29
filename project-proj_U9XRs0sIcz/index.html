@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voice-based code editor that converts speech to code with syntax highlighting">
+    <meta name="keywords" content="code editor, voice recognition, speech to code, programming">
+    <meta property="og:title" content="Voice Code Editor">
+    <meta property="og:description" content="Voice-based code editor that converts speech to code with syntax highlighting">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Voice Code Editor">
+    <meta name="twitter:description" content="Voice-based code editor that converts speech to code with syntax highlighting">
+    <title>Voice Code Editor</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/editor.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Editor.js"></script>
+    <script type="text/babel" src="components/VoiceControl.js"></script>
+    <script type="text/babel" src="components/Toolbar.js"></script>
+    <script type="text/babel" src="utils/speechRecognition.js"></script>
+    <script type="text/babel" src="utils/codeParser.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
